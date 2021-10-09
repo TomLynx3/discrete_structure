@@ -1,5 +1,6 @@
 import { Grid, Paper, Typography, Box } from "@mui/material";
 import Exercise3Matrix from "./Exercise_3_Matrix";
+import Image from "../../assets/homework1/uzd_3.png";
 
 const Exercise3 = () => {
   return (
@@ -14,7 +15,7 @@ const Exercise3 = () => {
             matricu.
           </Typography>
           <Box display="flex" justifyContent="center" marginTop="5rem">
-            <img src="/homework1/uzd_3.png" />
+            <img src={Image} />
           </Box>
         </Paper>
       </Grid>

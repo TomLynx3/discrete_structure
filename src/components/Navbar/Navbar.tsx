@@ -106,8 +106,8 @@ interface HomeWork {
 }
 
 const homeWorkObjects: HomeWork[] = [
-  { name: "MD1", routePath: "/" },
-  { name: "MD2", routePath: "/MD1" },
+  { name: "MD1", routePath: "/discrete_structure" },
+  { name: "MD2", routePath: "/discrete_structure/MD2" },
 ];
 
 export default function MiniDrawer() {
@@ -189,8 +189,8 @@ export default function MiniDrawer() {
         <DrawerHeader />
 
         <Switch>
-          <Route exact path="/" component={HomeWork1} />
-          <Route exact path="/md1" component={HomeWork2} />
+          <Route exact path="/discrete_structure" component={HomeWork1} />
+          <Route exact path="/discrete_structure/md2" component={HomeWork2} />
         </Switch>
       </Box>
     </Box>

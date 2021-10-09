@@ -1,4 +1,5 @@
 import { Paper, Grid, Box, Typography } from "@mui/material";
+import Image from "../../assets/homework2/hasse_3.png";
 
 const Exercise2_3 = () => {
   return (
@@ -18,7 +19,7 @@ const Exercise2_3 = () => {
             attiecību R: “dalās bez atlikuma”.
           </Typography>
           <Box display="flex" justifyContent="center">
-            <img src="/homework2/hasse_3.png" />
+            <img src={Image} />
           </Box>
         </Grid>
         <Grid item xs={6}>

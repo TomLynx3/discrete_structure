@@ -4,6 +4,7 @@ import { ModalUnstyled } from "@mui/core";
 import CloseIcon from "@mui/icons-material/Close";
 import { styled } from "@mui/system";
 import { AlgorithmType } from "./Exercise2_2";
+import Image from "../../assets/homework2/block_diagramma_3.png";
 
 const StyledModal = styled(ModalUnstyled)`
   position: fixed;
@@ -74,11 +75,7 @@ const TransitiveModal = ({ show, closeHandler }: any) => {
             <Grid item xs={6}>
               <Paper elevation={6} style={{ backgroundColor: "#98AFBA" }}>
                 <Box display="flex" justifyContent="center">
-                  <img
-                    src="/homework2/block_diagramma_3.png"
-                    height="75%"
-                    width="75%"
-                  />
+                  <img src={Image} height="75%" width="75%" />
                 </Box>
               </Paper>
             </Grid>
