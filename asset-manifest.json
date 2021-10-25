@@ -1,27 +1,28 @@
 {
   "files": {
     "main.css": "/discrete_structure/static/css/main.a617e044.chunk.css",
-    "main.js": "/discrete_structure/static/js/main.3fca987a.chunk.js",
-    "main.js.map": "/discrete_structure/static/js/main.3fca987a.chunk.js.map",
-    "runtime-main.js": "/discrete_structure/static/js/runtime-main.9af31fc3.js",
-    "runtime-main.js.map": "/discrete_structure/static/js/runtime-main.9af31fc3.js.map",
-    "static/js/2.ab243bb2.chunk.js": "/discrete_structure/static/js/2.ab243bb2.chunk.js",
-    "static/js/2.ab243bb2.chunk.js.map": "/discrete_structure/static/js/2.ab243bb2.chunk.js.map",
-    "static/js/3.a9cb818c.chunk.js": "/discrete_structure/static/js/3.a9cb818c.chunk.js",
-    "static/js/3.a9cb818c.chunk.js.map": "/discrete_structure/static/js/3.a9cb818c.chunk.js.map",
+    "main.js": "/discrete_structure/static/js/main.4cb8393a.chunk.js",
+    "main.js.map": "/discrete_structure/static/js/main.4cb8393a.chunk.js.map",
+    "runtime-main.js": "/discrete_structure/static/js/runtime-main.b18d0201.js",
+    "runtime-main.js.map": "/discrete_structure/static/js/runtime-main.b18d0201.js.map",
+    "static/js/2.d0489f65.chunk.js": "/discrete_structure/static/js/2.d0489f65.chunk.js",
+    "static/js/2.d0489f65.chunk.js.map": "/discrete_structure/static/js/2.d0489f65.chunk.js.map",
+    "static/js/3.be22564f.chunk.js": "/discrete_structure/static/js/3.be22564f.chunk.js",
+    "static/js/3.be22564f.chunk.js.map": "/discrete_structure/static/js/3.be22564f.chunk.js.map",
     "index.html": "/discrete_structure/index.html",
     "static/css/main.a617e044.chunk.css.map": "/discrete_structure/static/css/main.a617e044.chunk.css.map",
-    "static/js/2.ab243bb2.chunk.js.LICENSE.txt": "/discrete_structure/static/js/2.ab243bb2.chunk.js.LICENSE.txt",
+    "static/js/2.d0489f65.chunk.js.LICENSE.txt": "/discrete_structure/static/js/2.d0489f65.chunk.js.LICENSE.txt",
     "static/media/block_diagramma_1.877a4164.png": "/discrete_structure/static/media/block_diagramma_1.877a4164.png",
     "static/media/block_diagramma_2.d753afa3.png": "/discrete_structure/static/media/block_diagramma_2.d753afa3.png",
     "static/media/block_diagramma_3.fda0f5d0.png": "/discrete_structure/static/media/block_diagramma_3.fda0f5d0.png",
+    "static/media/pilsetas.608397d0.png": "/discrete_structure/static/media/pilsetas.608397d0.png",
     "static/media/uzd_2.09c86f00.png": "/discrete_structure/static/media/uzd_2.09c86f00.png",
     "static/media/uzd_3.af057f27.png": "/discrete_structure/static/media/uzd_3.af057f27.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.9af31fc3.js",
-    "static/js/2.ab243bb2.chunk.js",
+    "static/js/runtime-main.b18d0201.js",
+    "static/js/2.d0489f65.chunk.js",
     "static/css/main.a617e044.chunk.css",
-    "static/js/main.3fca987a.chunk.js"
+    "static/js/main.4cb8393a.chunk.js"
   ]
 }
