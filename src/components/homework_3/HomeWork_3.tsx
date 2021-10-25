@@ -1,9 +1,8 @@
 import { Grid, Typography } from "@mui/material";
 import { useState } from "react";
 import ExerciseSwitcher from "../homework_1/ExerciseSwitcher";
-import Exercise1_2 from "./Exercise1_2";
-import Exercise2_2 from "./Exercise2_2";
-import Exercise2_3 from "./Exercise2_3";
+import Exercise3_1 from "./Exercise3_1";
+import Exercise3_2 from "./Exercise3_2";
 
 interface Exercise {
   name: string;
@@ -11,10 +10,10 @@ interface Exercise {
 const exercies: Exercise[] = [
   { name: "1.Uzdevums" },
   { name: "2.Uzdevums" },
-  { name: "3.Uzdevums" },
+  // { name: "3.Uzdevums" },
 ];
 
-const HomeWork2 = () => {
+const HomeWork3 = () => {
   const [currentExercise, setCurrentExercise] = useState(0);
 
   const handleNextEx = (): void => {
@@ -32,13 +31,12 @@ const HomeWork2 = () => {
   const getExercise = () => {
     switch (currentExercise) {
       case 0:
-        return <Exercise1_2></Exercise1_2>;
+        return <Exercise3_1></Exercise3_1>;
       case 1:
-        return <Exercise2_2></Exercise2_2>;
-      case 2:
-        return <Exercise2_3></Exercise2_3>;
+        return <Exercise3_2></Exercise3_2>;
     }
   };
+
   return (
     <Grid container>
       <Grid item xs={12} style={{ display: "flex", alignItems: "center" }}>
@@ -52,7 +50,7 @@ const HomeWork2 = () => {
             nextEx={handleNextEx}
             currentEx={currentExercise}
             prevEx={handlePrevEx}
-            length={2}
+            length={1}
           ></ExerciseSwitcher>
         </Grid>
       </Grid>
@@ -61,4 +59,4 @@ const HomeWork2 = () => {
   );
 };
 
-export default HomeWork2;
+export default HomeWork3;

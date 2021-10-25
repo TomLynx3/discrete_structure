@@ -201,7 +201,7 @@ const Exercise2_2 = () => {
         marginTop: "2rem",
       }}
     >
-      <Grid container xs={12} spacing={0} justifyContent="center">
+      <Grid container xs={12} spacing={2} justifyContent="center">
         <Grid item xs={5} style={{ padding: "1rem" }}>
           <DecartMatrix setMatrixCallback={setMatrix}></DecartMatrix>
         </Grid>

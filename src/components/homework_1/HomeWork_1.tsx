@@ -56,6 +56,7 @@ const HomeWork1 = () => {
             nextEx={handleNextEx}
             currentEx={currentExercise}
             prevEx={handlePrevEx}
+            length={2}
           ></ExerciseSwitcher>
         </Grid>
       </Grid>

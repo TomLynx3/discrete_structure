@@ -1,7 +1,7 @@
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 
-const ExerciseSwitcher = ({ nextEx, currentEx, prevEx }: any) => {
+const ExerciseSwitcher = ({ nextEx, currentEx, prevEx, length }: any) => {
   return (
     <Grid container columnSpacing={{ xs: 2, sm: 2, md: 3 }} xs={10}>
       <Grid item xs={12}>
@@ -10,7 +10,7 @@ const ExerciseSwitcher = ({ nextEx, currentEx, prevEx }: any) => {
           fullWidth
           style={{ margin: "0.5rem" }}
           onClick={nextEx}
-          disabled={currentEx === 2}
+          disabled={currentEx === length}
         >
           Nākamais uzdevums
         </Button>
