@@ -9,6 +9,7 @@ import Difference from "./Difference";
 import CartesianProduct from "./CartesianProduct";
 import Projection from "./Projection";
 import SelectionComp from "./Selection";
+import Division from "./Division";
 
 const Exercise3_1 = () => {
   return (
@@ -42,11 +43,19 @@ const Exercise3_1 = () => {
             </Grid>
           </Grid>
           <Grid container xs={12}>
-            <Grid item xs={6}>
+            <Grid item xs={4}>
               <Projection></Projection>
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={4}>
               <SelectionComp></SelectionComp>
+            </Grid>
+            <Grid item xs={4}>
+              <Section></Section>
+            </Grid>
+          </Grid>
+          <Grid container xs={12}>
+            <Grid item xs={4}>
+              <Division></Division>
             </Grid>
           </Grid>
         </Paper>

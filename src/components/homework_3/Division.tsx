@@ -53,7 +53,7 @@ const style = {
   px: 4,
   pb: 3,
 };
-const Section = () => {
+const Division = () => {
   const [open, setOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
 
@@ -78,6 +78,10 @@ const Section = () => {
     return { stapliec, atzime, datums, prieksmets };
   };
 
+  const fillDivisition = (stapliecnumurs: string) => {
+    return { stapliecnumurs };
+  };
+
   const examData = [
     fillExam("234HJK", "7", "05/10/2021", "DSD"),
     fillExam("89OLK", "9", "06/10/2021", "DSD"),
@@ -92,9 +96,9 @@ const Section = () => {
     fillExam("562PK", "7", "06/10/2021", "SIMP"),
   ];
 
-  const examSectionResult = [
-    fillExam("234HJK", "7", "05/10/2021", "DSD"),
-    fillExam("89OLK", "9", "06/10/2021", "DSD"),
+  const examDivisionResult = [
+    fillDivisition("234HJK"),
+    fillDivisition("89OLK"),
   ];
   return (
     <Box textAlign="center">
@@ -103,7 +107,7 @@ const Section = () => {
         style={{ marginTop: "1rem" }}
         onClick={handleOpen}
       >
-        Šķēlums
+        Dalīšana
       </Button>
       <StyledModal
         aria-labelledby="unstyled-modal-title"
@@ -115,7 +119,7 @@ const Section = () => {
         <Box sx={style}>
           <Grid container>
             <Grid item xs={11}>
-              <h2 id="unstyled-modal-title">Šķēlums</h2>
+              <h2 id="unstyled-modal-title">Dalīšana</h2>
             </Grid>
             <Grid
               item
@@ -163,7 +167,7 @@ const Section = () => {
                 }}
               >
                 <Typography align="center" variant="h4">
-                  Apvienojums
+                  Dalīšana
                 </Typography>
                 <Grid container xs={12} spacing={2}>
                   <Grid item xs={6}>
@@ -310,8 +314,9 @@ const Section = () => {
                     </TableContainer>
                   </Grid>
                 </Grid>
+
                 <Typography variant="h5" align="center">
-                  Šķēluma rezultāts
+                  Exam<sub>1,4</sub> {"\u00F7"} Exam1<sub>4</sub>
                 </Typography>
                 <TableContainer component={Paper}>
                   <Table
@@ -320,17 +325,15 @@ const Section = () => {
                   >
                     <TableHead>
                       <TableRow>
-                        {examLabels.map((item) => (
-                          <TableCell align="center" height="10px" width="15px">
-                            {item}
-                          </TableCell>
-                        ))}
+                        <TableCell align="center" height="10px" width="15px">
+                          {examLabels[0]}
+                        </TableCell>
                       </TableRow>
                     </TableHead>
                     <TableBody>
-                      {examSectionResult.map((row) => (
+                      {examDivisionResult.map((row) => (
                         <TableRow
-                          key={row.stapliec}
+                          key={row.stapliecnumurs}
                           sx={{
                             border: 0,
                             backgroundColor: "#00a9c9",
@@ -345,17 +348,8 @@ const Section = () => {
                           >
                             <Typography variant="h6">
                               {" "}
-                              {row.stapliec}
+                              {row.stapliecnumurs}
                             </Typography>
-                          </TableCell>
-                          <TableCell height="10px" width="15px" align="center">
-                            {row.atzime}
-                          </TableCell>
-                          <TableCell height="10px" width="15px" align="center">
-                            {row.datums}
-                          </TableCell>
-                          <TableCell height="10px" width="15px" align="center">
-                            {row.prieksmets}
                           </TableCell>
                         </TableRow>
                       ))}
@@ -371,4 +365,4 @@ const Section = () => {
   );
 };
 
-export default Section;
+export default Division;
