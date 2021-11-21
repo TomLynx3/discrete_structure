@@ -3,24 +3,9 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
 import { styled } from "@mui/system";
-import {
-  IconButton,
-  Menu,
-  MenuItem,
-  Paper,
-  Snackbar,
-  Typography,
-  TableContainer,
-  Table,
-  TableRow,
-  TableCell,
-  TableBody,
-  TableHead,
-} from "@mui/material";
+import { IconButton, Menu, Paper, Typography } from "@mui/material";
 import { useState } from "react";
 import CloseIcon from "@mui/icons-material/Close";
-import FileCopyIcon from "@mui/icons-material/FileCopy";
-import { CopyToClipboard } from "react-copy-to-clipboard";
 import IterationTable from "./IterationTable";
 const StyledModal = styled(ModalUnstyled)`
   position: fixed;

@@ -28,6 +28,7 @@ import HomeWork2 from "../homework_2/HomeWork2";
 import { TurnedInTwoTone } from "@mui/icons-material";
 import HomeWork3 from "../homework_3/HomeWork_3";
 import HomeWork4 from "../homework_4/Homework_4";
+import HomeWork5 from "../homework_5/Homework5";
 
 const drawerWidth = 240;
 
@@ -112,6 +113,7 @@ const homeWorkObjects: HomeWork[] = [
   { name: "MD2", routePath: "/discrete_structure/MD2" },
   { name: "MD3", routePath: "/discrete_structure/MD3" },
   { name: "MD4", routePath: "/discrete_structure/MD4" },
+  { name: "MD5", routePath: "/discrete_structure/MD5" },
 ];
 
 export default function MiniDrawer() {
@@ -197,6 +199,7 @@ export default function MiniDrawer() {
           <Route exact path="/discrete_structure/md2" component={HomeWork2} />
           <Route exact path="/discrete_structure/md3" component={HomeWork3} />
           <Route exact path="/discrete_structure/md4" component={HomeWork4} />
+          <Route exact path="/discrete_structure/md5" component={HomeWork5} />
         </Switch>
       </Box>
     </Box>
